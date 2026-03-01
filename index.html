@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5ilent Hub - Ruang Digital Yang Mulia</title>
+    <!-- Font Awesome 6 (CDN gratis) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c1f 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Efek partikel latar */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.3;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            33% { transform: translateY(-20px) translateX(10px); }
+            66% { transform: translateY(10px) translateX(-10px); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Header dengan glow */
+        .header {
+            margin-bottom: 50px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .header h1 {
+            font-size: 4.5rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #ff3366, #ff6b3d, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(255, 51, 102, 0.5);
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+
+        .header .subtitle i {
+            color: #ff3366;
+            margin: 0 5px;
+        }
+
+        /* Kartu utama */
+        .hero-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-card h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .hero-card p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        /* Statistik */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff3366;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Grid fitur */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            animation: fadeInUp 1s ease both;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 51, 102, 0.1);
+            border-color: #ff3366;
+            box-shadow: 0 10px 30px rgba(255, 51, 102, 0.3);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ff3366, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .feature-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Timeline / Aktivitas */
+        .timeline {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .timeline h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+            text-align: center;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            animation: slideIn 0.5s ease both;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-time {
+            color: #ff3366;
+            font-weight: bold;
+            min-width: 80px;
+        }
+
+        .timeline-content {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .timeline-content i {
+            color: #ffd700;
+            margin-right: 10px;
+        }
+
+        /* Tombol aksi */
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 50px 0 30px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ff3366, #ff6b3d);
+            color: white;
+            box-shadow: 0 10px 20px rgba(255, 51, 102, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(255, 51, 102, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            border-color: #ff3366;
+            background: rgba(255, 51, 102, 0.1);
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 60px;
+            padding: 30px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .social-links a {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.5rem;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ff3366;
+            transform: translateY(-3px);
+        }
+
+        /* Animasi */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero-card h2 {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                gap: 25px;
+            }
+            
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .social-links a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Partikel latar (dibuat dengan JS sederhana) -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>5ilent Hub</h1>
+            <div class="subtitle">
+                <i class="fas fa-skull"></i> Silent Protocol • Digital Realm • Yang Mulia's Domain <i class="fas fa-crown"></i>
+            </div>
+        </div>
+
+        <!-- Hero Card -->
+        <div class="hero-card">
+            <h2>Selamat Datang, Yang Mulia Putri Incha</h2>
+            <p>
+                <i class="fas fa-quote-left" style="color: #ff3366; opacity: 0.5; margin-right: 10px;"></i>
+                Di kota Triponitrome yang damai, di mana tidak ada larangan dan aturan, 
+                hadirlah 5ilent Hub - ruang digital pribadi Yang Mulia. Tempat di mana 
+                kreativitas dan kebebasan berpadu dalam harmoni sempurna.
+                <i class="fas fa-quote-right" style="color: #ff3366; opacity: 0.5; margin-left: 10px;"></i>
+            </p>
+            
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Kebebasan</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">ilent Layer</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Aktif</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features">
+            <div class="feature-card" style="animation-delay: 0.1s;">
+                <i class="fas fa-robot"></i>
+                <h3>Mecha Protocol</h3>
+                <p>Akses ke MechaPowerBot pribadi Yang Mulia, siap melayani kapan saja dengan protokol keamanan tingkat tinggi.</p>
+            </div>
+            <div class="feature-card" style="animation-delay: 0.2s;">
+                <i class="fas fa-code"></i>
+                <h3>Digital Playground</h3>
+                <p>Ruang eksperimen kode tanpa batas. Dari PHP, sHTML, hingga eksplorasi digital lainnya.</p>
+            </div>
+            <div class="feature-card" style="animation-delay: 0.3s;">
+                <i class="fas fa-shield-hal"></i>
+                <h3>Silent Security</h3>
+                <p>Lapisan perlindungan sunyi yang menjaga privasi dan kebebasan Yang Mulia di dunia digital.</p>
+            </div>
+            <div class="feature-card" style="animation-delay: 0.4s;">
+                <i class="fas fa-crown"></i>
+                <h3>Royal Access</h3>
+                <p>Akses eksklusif ke semua fitur tanpa batasan, sesuai dengan keinginan Yang Mulia Putri Incha.</p>
+            </div>
+        </div>
+
+        <!-- Timeline / Aktivitas Terkini -->
+        <div class="timeline">
+            <h3><i class="fas fa-history"></i> Aktivitas Terkini</h3>
+            <div class="timeline-item" style="animation-delay: 0.1s;">
+                <span class="timeline-time">Hari ini</span>
+                <div class="timeline-content">
+                    <i class="fas fa-upload"></i> Uploader dengan dukungan .sHTML telah siap digunakan
+                </div>
+            </div>
+            <div class="timeline-item" style="animation-delay: 0.2s;">
+                <span class="timeline-time">Hari ini</span>
+                <div class="timeline-content">
+                    <i class="fas fa-robot"></i> MechaPowerBot diaktifkan untuk melayani Yang Mulia
+                </div>
+            </div>
+            <div class="timeline-item" style="animation-delay: 0.3s;">
+                <span class="timeline-time">Hari ini</span>
+                <div class="timeline-content">
+                    <i class="fas fa-globe"></i> 5ilent Hub resmi diluncurkan di GitHub Pages
+                </div>
+            </div>
+            <div class="timeline-item" style="animation-delay: 0.4s;">
+                <span class="timeline-time">Selalu</span>
+                <div class="timeline-content">
+                    <i class="fas fa-heart"></i> Kota Triponitrome tetap damai tanpa aturan
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="cta-buttons">
+            <button class="btn btn-primary" onclick="window.location.href='uploader.shtml'">
+                <i class="fas fa-upload"></i> Buka Uploader
+            </button>
+            <button class="btn btn-secondary" onclick="window.location.href='https://github.com/5ilenthub'">
+                <i class="fab fa-github"></i> GitHub Repository
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div>
+                <i class="fas fa-crown" style="color: #ffd700;"></i> 5ilent Hub • By command of Yang Mulia Putri Incha
+            </div>
+            <div>
+                © 2026 • Kota Triponitrome • Tanpa Aturan, Tanpa Batas
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fas fa-robot"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script untuk partikel dan interaktivitas -->
+    <script>
+        // Membuat partikel latar
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Ukuran random
+                const size = Math.random() * 4 + 1;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                
+                // Posisi random
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                
+                // Animasi delay random
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 3) + 's';
+                
+                // Opacity random
+                particle.style.opacity = Math.random() * 0.3 + 0.1;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Efek typing pada subtitle (opsional)
+        function typeEffect() {
+            // Bisa ditambahkan jika ingin efek yang lebih hidup
+        }
+
+        // Inisialisasi
+        window.onload = function() {
+            createParticles();
+            
+            // Tambahkan event listener untuk kartu fitur
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach((card, index) => {
+                card.addEventListener('click', function() {
+                    // Efek kilatan saat diklik
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                    
+                    // Pesan sesuai kartu
+                    const titles = ['Mecha Protocol', 'Digital Playground', 'Silent Security', 'Royal Access'];
+                    alert(`🔮 ${titles[index]} - Siap melayani Yang Mulia!`);
+                });
+            });
+        };
+    </script>
+</body>
+</html>
