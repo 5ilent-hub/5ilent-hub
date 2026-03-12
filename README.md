@@ -68,14 +68,14 @@ img {
         <sub>Ringan dan cepat</sub>
       </td>
             <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
-        <img src="https://icons8.com/icon/pKIvPVcAOG26/download" width="50"/>
+        <img src="https://img.icons8.com/?size=100&id=pKIvPVcAOG26&format=png&color=000000" width="50"/>
         <br />
         <b>Pilihan unduhan atau unduhan tunggal</b>
         <br />
         <sub>pilihan unduhan akan membuat zip</sub>
       </td>
             <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
-        <img src="https://icons8.com/icon/19292/console" width="50"/>
+        <img src="https://img.icons8.com/?size=100&id=19292&format=png&color=000000" width="50"/>
         <br />
         <b>Terminal Eksekusi</b>
         <br />
