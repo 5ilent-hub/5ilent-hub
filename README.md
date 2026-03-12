@@ -19,27 +19,41 @@
 <p align="center">
   <img src="https://5ilent-hub.github.io/images/display.png" alt="Display 5ilent Minishell" width="600"/>
 </p>
-<!-- Animasi CSS -->
-<style>
-@keyframes slide {
-  0%, 40% { transform: translateX(0); }
-  50%, 90% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
-}
-
-div[style*="animation: slide"]:hover {
-  animation-play-state: paused;
-}
-
-/* Styling untuk gambar */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-</style>
-
----
+<!-- description -->
+<div align="center">
+  <h3>⚡ 5ilent FileManager ⚡</h3>
+  <p>
+    <strong>FileManager yang powerful dan ringan untuk kebutuhan Anda</strong>
+    <br />
+    Dibangun dengan performa tinggi dan keamanan terbaik
+  </p>
+  <p>
+    <i>"Manage your files with style and power"</i>
+  </p>
+</div>
+  <!-- RAW GitHub -->
+  <a href="https://raw.githubusercontent.com/5ilent-hub/5ilent-hub/refs/heads/main/5ilent.php">
+    <img src="https://img.shields.io/badge/📄_RAW_GitHub-View_Code-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=00F7F7&color=black" width="400"/>
+  </a>
+  
+  <br />
+  <br />
+  
+  <!-- Tombol Download -->
+  <a href="https://github.com/5ilent-hub/5ilent-hub/blob/2909d987b7e549f7dc2fe4a2d00f83fe642e7d10/5ilent.php">
+    <img src="https://img.shields.io/badge/📥_Download_Now-Get_File-00F7F7?style=for-the-badge&logo=download&logoColor=white&labelColor=black&color=00F7F7" width="400"/>
+  </a>
+  
+  <br />
+  <br />
+  
+  <!-- Info File -->
+  <p>
+    <img src="https://img.shields.io/badge/Size-2.5_MB-blue?style=flat-square" alt="size"/>
+    <img src="https://img.shields.io/badge/Version-2.0.0-green?style=flat-square" alt="version"/>
+    <img src="https://img.shields.io/badge/Updated-2024-purple?style=flat-square" alt="updated"/>
+  </p>
+</div>
 
 ## 🧐 **Fitur Unggulan**
 
@@ -93,6 +107,7 @@ img {
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react"/>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"/>
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="php"/>
 </p>
 
 ## 📦 **Instalasi**
