@@ -13,42 +13,9 @@
 ---
 
 ## 📸 Screenshot / Demo
-
-<div align="center">
-  
-  <!-- Container Slider -->
-  <div style="position: relative; width: 100%; max-width: 600px; margin: 0 auto; overflow: hidden; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,247,247,0.2);">
-    
-    <!-- Slide wrapper -->
-    <div style="display: flex; width: 200%; animation: slide 10s infinite;">
-      <!-- Slide 1 - Menggunakan gambar placeholder yang pasti muncul -->
-      <div style="width: 50%; position: relative;">
-        <img src="https://via.placeholder.com/600x400/00F7F7/000000?text=5ilent-Mini+Main+View" alt="Tampilan Utama 5ilent-Mini" style="width: 100%; height: auto; display: block; border-radius: 10px;"/>
-        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; text-align: center; border-radius: 0 0 15px 15px;">
-          <span style="background: #00F7F7; color: black; padding: 5px 15px; border-radius: 20px; font-weight: bold;">⚡ Tampilan Utama</span>
-        </div>
-      </div>
-      
-      <!-- Slide 2 - Menggunakan gambar placeholder yang pasti muncul -->
-      <div style="width: 50%; position: relative;">
-        <img src="https://via.placeholder.com/600x400/FF6B6B/000000?text=Scanner+Feature" alt="Fitur Scanner 5ilent-Mini" style="width: 100%; height: auto; display: block; border-radius: 10px;"/>
-        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; text-align: center; border-radius: 0 0 15px 15px;">
-          <span style="background: #00F7F7; color: black; padding: 5px 15px; border-radius: 20px; font-weight: bold;">⚡ Fitur Scanner</span>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Navigation Dots -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 10;">
-      <div style="width: 12px; height: 12px; background: #00F7F7; border-radius: 50%; cursor: pointer; box-shadow: 0 0 10px #00F7F7;"></div>
-      <div style="width: 12px; height: 12px; background: rgba(255,255,255,0.5); border-radius: 50%; cursor: pointer;"></div>
-    </div>
-  </div>
-  
-  <p style="margin-top: 20px; color: #00F7F7; font-style: italic;">
-    ✨ Geser otomatis setiap 5 detik ✨
-  </p>
-</div>
+<p align="center">
+  <img src="https://5ilent-hub.github.io/images/5ilent.png" alt="Project 5ilent Minishell" width="600"/>
+</p>
 
 <!-- Animasi CSS -->
 <style>
