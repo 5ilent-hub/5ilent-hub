@@ -75,7 +75,7 @@
         <sub>Tambah admin dengan mudah</sub>
       </td>
       <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
-        <img src="https://img.icons8.com/?size=100&id=undefined&format=png&color=000000" width="50"/>
+        <img src="https://img.icons8.com/?size=100&id=BEmmgr4EZtsa&format=png&color=000000" width="50"/>
         <br />
         <b>⚡ Performa Tinggi</b>
         <br />
