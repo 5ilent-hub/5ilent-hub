@@ -47,28 +47,28 @@ img {
   <table>
     <tr>
       <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
-        <img src="https://img.icons8.com/fluency/96/000000/scanner.png" width="50"/>
+        <img src="https://img.icons8.com/?size=100&id=pfB8ihEIPcSD&format=png&color=000000" width="50"/>
         <br />
         <b>📡 Scanner</b>
         <br />
         <sub>Scanning dengan presisi tinggi</sub>
       </td>
       <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
-        <img src="https://icons8.com/icon/kLwxfm264CVU/portrait-mode-scanning" width="50"/>
+        <img src="https://img.icons8.com/?size=100&id=pzqRLMAhJJGC&format=png&color=000000" width="50"/>
         <br />
         <b>👑 Add Adminer</b>
         <br />
         <sub>Tambah admin dengan mudah</sub>
       </td>
       <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
-        <img src="https://img.icons8.com/fluency/96/000000/lightning-bolt.png" width="50"/>
+        <img src="https://img.icons8.com/?size=100&id=undefined&format=png&color=000000" width="50"/>
         <br />
         <b>⚡ Performa Tinggi</b>
         <br />
         <sub>Ringan dan cepat</sub>
       </td>
             <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
-        <img src="https://img.icons8.com/?size=100&id=pKIvPVcAOG26&format=png&color=000000" width="50"/>
+        <img src="https://img.icons8.com/?size=100&id=fzLbShktxQJU&format=png&color=000000" width="50"/>
         <br />
         <b>Pilihan unduhan atau unduhan tunggal</b>
         <br />
