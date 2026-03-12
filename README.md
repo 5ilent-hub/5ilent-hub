@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&duration=3000&pause=500&color=00F7F7&center=true&vCenter=true&width=435&lines=Selamat+datang!;Ini+adalah+proyek+keren!;Dibuat+dengan+❤️" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&duration=3000&pause=500&color=00F7F7&center=true&vCenter=true&width=435&lines=Welcome!;This+is+a+cool+project!;Made+with+❤️" alt="Typing SVG" />
 </p>
 
 ---
@@ -19,19 +19,22 @@
 <p align="center">
   <img src="https://5ilent-hub.github.io/images/display.png" alt="Display 5ilent Minishell" width="600"/>
 </p>
+
 <!-- description -->
 <div align="center">
   <h3>⚡ 5ilent FileManager ⚡</h3>
   <p>
-    <strong>FileManager yang powerful dan ringan untuk kebutuhan Anda</strong>
+    <strong>A powerful and lightweight FileManager for your needs</strong>
     <br />
-    Dibangun dengan performa tinggi dan keamanan terbaik
+    Built with high performance and top-notch security
   </p>
   <p>
     <i>"Manage your files with style and power"</i>
   </p>
-</div>
-  <!-- RAW GitHub -->
+  
+  <br />
+  
+  <!-- RAW GitHub Button -->
   <a href="https://raw.githubusercontent.com/5ilent-hub/5ilent-hub/refs/heads/main/5ilent.php">
     <img src="https://img.shields.io/badge/📄_RAW_GitHub-View_Code-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=00F7F7&color=black" width="400"/>
   </a>
@@ -39,7 +42,7 @@
   <br />
   <br />
   
-  <!-- Tombol Download -->
+  <!-- Download Button -->
   <a href="https://github.com/5ilent-hub/5ilent-hub/blob/2909d987b7e549f7dc2fe4a2d00f83fe642e7d10/5ilent.php">
     <img src="https://img.shields.io/badge/📥_Download_Now-Get_File-00F7F7?style=for-the-badge&logo=download&logoColor=white&labelColor=black&color=00F7F7" width="400"/>
   </a>
@@ -47,7 +50,7 @@
   <br />
   <br />
   
-  <!-- Info File -->
+  <!-- File Info -->
   <p>
     <img src="https://img.shields.io/badge/Size-2.5_MB-blue?style=flat-square" alt="size"/>
     <img src="https://img.shields.io/badge/Version-2.0.0-green?style=flat-square" alt="version"/>
@@ -55,7 +58,7 @@
   </p>
 </div>
 
-## 🧐 **Fitur Unggulan**
+## 🧐 **Key Features**
 
 <div align="center">
   <table>
@@ -65,35 +68,44 @@
         <br />
         <b>📡 Scanner</b>
         <br />
-        <sub>Scanning dengan presisi tinggi</sub>
+        <sub>High-precision scanning</sub>
       </td>
       <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
         <img src="https://img.icons8.com/?size=100&id=pzqRLMAhJJGC&format=png&color=000000" width="50"/>
         <br />
-        <b>👑 Add Adminer</b>
+        <b>👑 Add Admin</b>
         <br />
-        <sub>Tambah admin dengan mudah</sub>
+        <sub>Easily add administrators</sub>
       </td>
       <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
         <img src="https://img.icons8.com/?size=100&id=BEmmgr4EZtsa&format=png&color=000000" width="50"/>
         <br />
-        <b>⚡ Performa Tinggi</b>
+        <b>⚡ High Performance</b>
         <br />
-        <sub>Ringan dan cepat</sub>
+        <sub>Lightweight and fast</sub>
       </td>
-            <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
+    </tr>
+    <tr>
+      <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
         <img src="https://img.icons8.com/?size=100&id=fzLbShktxQJU&format=png&color=000000" width="50"/>
         <br />
-        <b>Pilihan unduhan atau unduhan tunggal</b>
+        <b>Multi/ Single Download</b>
         <br />
-        <sub>pilihan unduhan akan membuat zip</sub>
+        <sub>Multi-download creates ZIP archive</sub>
       </td>
-            <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
+      <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
         <img src="https://img.icons8.com/?size=100&id=19292&format=png&color=000000" width="50"/>
         <br />
-        <b>Terminal Eksekusi</b>
+        <b>Terminal Execution</b>
         <br />
-        <sub>edit, file, rename or etc.</sub>
+        <sub>Edit, rename, delete files, etc.</sub>
+      </td>
+      <td align="center" width="250" style="padding: 15px; border: 1px solid #00F7F7; border-radius: 10px; margin: 5px;">
+        <img src="https://img.icons8.com/?size=100&id=86805&format=png&color=000000" width="50"/>
+        <br />
+        <b>File Manager</b>
+        <br />
+        <sub>Complete file management</sub>
       </td>
     </tr>
   </table>
@@ -110,17 +122,17 @@
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="php"/>
 </p>
 
-## 📦 **Instalasi**
+## 📦 **Installation**
 
 ```bash
 # Clone repository
 git clone https://github.com/5ilent-hub/5ilent-mini.git
 
-# Masuk ke direktori
+# Enter directory
 cd 5ilent-mini
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Jalankan
+# Run
 python main.py
