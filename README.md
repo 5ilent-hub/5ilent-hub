@@ -1,4 +1,4 @@
-<h1 align="center" id="title">⚡ 5ilent-Hub ⚡</h1>
+<h1 align="center" id="title">⚡ 5ilent-Mini ⚡</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge" alt="version"/>
@@ -14,13 +14,13 @@
 
 ## 📸 Screenshot / Demo
 <p align="center">
-  <img src="link-gambar-anda-disini.png" alt="Project Screenshot" width="600"/>
+  <img src="https://5ilent-hub.github.io/images/5ilent.png" alt="Project 5ilent Minishell" width="600"/>
 </p>
 
 ## 🧐 Fitur
-*   Fitur A: Deskripsi singkat dan menarik.
-*   Fitur B: Dibuat dengan teknologi terkini.
-*   Fitur C: Performa tinggi dan ringan.
+*   scanner 
+*   add adminer
+*   Performa tinggi dan ringan.
 *   Dan masih banyak lagi...
 
 ## 🛠️ Tech Stack
@@ -29,9 +29,3 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="js"/>
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react"/>
 </p>
-
-## 🚀 Cara Install
-
-Clone project ini
-```bash
-  git clone https://github.com/username/nama-proyek.git
