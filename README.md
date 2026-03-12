@@ -16,7 +16,9 @@
 <p align="center">
   <img src="https://5ilent-hub.github.io/images/5ilent.png" alt="Project 5ilent Minishell" width="600"/>
 </p>
-
+<p align="center">
+  <img src="https://5ilent-hub.github.io/images/5ilent.png" alt="Project 5ilent Minishell" width="600"/>
+</p>
 <!-- Animasi CSS -->
 <style>
 @keyframes slide {
